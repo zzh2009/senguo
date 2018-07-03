@@ -40,26 +40,28 @@ export default {
     }
 };
 </script>
-
-<style lang="less">
-.user {
-    &-poster {
-        width: 100%;
-        height: 100%;
+<style lang="scss" scoped="" type="text/css">
+$primary-color: #333;
+body {
+  color: $primary-color; 
+}
+.user-poster {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.user-group {
+    margin-bottom: 0.3rem;
+}
+.user-links {
+    padding: 15px 0;
+    font-size: 12px;
+    text-align: center;
+    background-color: #fff;
+    .van-icon {
         display: block;
-    }
-    &-group {
-        margin-bottom: 0.3rem;
-    }
-    &-links {
-        padding: 15px 0;
-        font-size: 12px;
-        text-align: center;
-        background-color: #fff;
-        .van-icon {
-            display: block;
-            font-size: 24px;
-        }
+        font-size: 24px;
     }
 }
+
 </style>
